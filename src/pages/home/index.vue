@@ -1,17 +1,17 @@
 <template>
   <div class="pad-15">
     <!-- 库存数据 -->
-    <div class="flex flex-around pad-10 data-info-box">
+    <div class="flex flex-around pad-10 data-info-box border-radius-5">
       <div class="align-c">
-        <span>8888</span>
-        <span class="mar-10">总库存</span>
+        <span class="font-24 font-w">8888</span>
+        <span class="mar-10 font-color-9">总库存</span>
       </div>
       <div class="align-c">
-        <span>100</span>
-        <span class="mar-10">本月新入库</span>
+        <span class="font-24 font-w">100</span>
+        <span class="mar-10 font-color-9">本月新入库</span>
       </div>
     </div>
-    
+
   </div>
 </template>
 
