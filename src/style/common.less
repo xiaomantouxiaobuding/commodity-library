@@ -1,7 +1,855 @@
-// 字体
+/*
+常用的
+*/
+
+// 禁止滚动
+.no-scroll {
+  width: 100%;
+  height: 100%;
+  position: fixed;
+  overflow: hidden;
+}
+
+// icon样式，覆盖iconfont.cn
+.iconfont {
+  display: flex;
+  flex-flow: row;
+  align-items: center;
+  line-height: 1;
+}
+
+// 白色背景面板
+.panel {
+  background-color: #fff;
+  margin-bottom: 10px;
+  border-top: 0.5px solid #e5e5e5;
+  border-bottom: 0.5px solid #e5e5e5;
+  clear: both;
+  margin-left: 12px;
+  margin-right: 12px;
+  border-radius: 10px;
+  box-shadow: 0px 0px 3px rgba(0, 0, 0, 0.1);
+}
+
+// 白色背景面板
+.panel-n {
+  background-color: #fff;
+  margin-bottom: 10px;
+  clear: both;
+}
+
+/*弹出遮罩层*/
+.div-pop {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.5);
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  z-index: 1001;
+}
+
 .font-w {
   font-weight: bold;
 }
 
+/*
+默认颜色
+font-color 默认 #333
+*/
+.font-black{
+  color: #000;
+}
 
-//外填充
+.font-color {
+  color: #333;
+}
+
+.font-color-6 {
+  color: #666;
+}
+.font-color-9 {
+  color: #999;
+}
+
+/*颜色*/
+.font-white {
+  color: #fff;
+}
+
+.font-gray {
+  color: gray;
+}
+
+.font-light-gray {
+  color: #a7a7a7;
+}
+
+.font-red {
+  color: #ff001d;
+}
+
+.font-orange {
+  color: #eb6700
+}
+
+.font-green {
+  color: #00b200;
+}
+
+.font-yellow {
+  color: #f8c400;
+}
+
+.font-blue {
+  color: #3187fd;
+}
+
+.big-title {
+  font-size: 25px;
+  font-weight: bold;
+}
+
+.small-title {
+  font-size: 18px;
+  font-weight: bold;
+}
+
+.main-text {
+  font-size: 15px;
+}
+
+.other-text {
+  font-size: 13px;
+}
+
+// 斜体
+.font-italic {
+  font-style: italic
+}
+
+// 下滑线
+.font-under {
+  text-decoration: underline;
+}
+
+// 中划线
+.font-over {
+  text-decoration: line-through;
+}
+
+/*边框*/
+
+.border-none {
+  border: 0;
+}
+.border-none:before {
+  border: 0;
+}
+.border-none:after {
+  border: 0;
+}
+
+.border-all {
+  border: 0.5px solid #d9d9d9;
+}
+
+.border-t {
+  border-top: 0.5px solid #d9d9d9;
+}
+
+.border-b {
+  border-bottom: 0.5px solid #d9d9d9;
+}
+
+.border-l {
+  border-left: 0.5px solid #d9d9d9;
+}
+
+.border-r {
+  border-right: 0.5px solid #d9d9d9;
+}
+
+.flex {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: flex;
+}
+
+.flex-item {
+  -webkit-box-flex: 1;
+  -webkit-flex: 1;
+  flex: 1;
+}
+/* 横版 向两边靠*/
+.flex-between{
+  justify-content: space-between;
+  align-items: center;
+}
+/* 横向 居中*/
+.flex-center{
+  justify-content: center;
+  align-items: center;
+}
+/*竖版 每行2个*/
+.flex-wrap-2 {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+/*换行*/
+.flex-wrap {
+  flex-wrap: wrap;
+}
+
+/*横版*/
+.flex-row {
+  display: flex;
+  flex-flow: row;
+}
+
+/*竖版*/
+.flex-col {
+  display: flex;
+  flex-flow: column;
+}
+
+/*横向居左*/
+.align-l {
+  display: flex;
+  flex-flow: column;
+  align-items: flex-start;
+}
+
+/*横向居中*/
+.align-c {
+  display: flex;
+  flex-flow: column;
+  align-items: center;
+}
+
+/*垂直居中*/
+.v-align-c {
+  display: flex;
+  flex-flow: row;
+  align-items: center;
+}
+
+/*垂直底部*/
+.v-align-b {
+  display: flex;
+  flex-flow: row;
+  align-items: flex-end;
+}
+
+/*垂直头部*/
+.v-align-t {
+  display: flex;
+  flex-flow: row;
+  align-items: flex-start;
+}
+
+/*右对齐*/
+.align-r {
+  display: flex;
+  flex-flow: row;
+  justify-content: flex-end;
+}
+
+/*文字排版*/
+
+.text-align-c {
+  text-align: center;
+}
+
+.text-align-l {
+  text-align: left;
+}
+
+.text-align-r {
+  text-align: right;
+}
+
+.text-align-j {
+  text-align: justify;
+}
+.text-del {
+  text-decoration: line-through;
+}
+
+// 宽度100%
+.width-per-100 {
+  width: 100%
+}
+
+.width-per-90 {
+  width: 90%
+}
+
+.width-per-80 {
+  width: 80%
+}
+
+.width-per-70 {
+  width: 70%
+}
+
+//高度100%
+.height-per-100 {
+  height: 100%
+}
+
+// 白色背景
+.bg-color-white {
+  background-color: #fff;
+}
+
+// 浮在右边
+.float-r {
+  float: right;
+}
+
+// 绝对位置：右
+.abs-right {
+  position: absolute;
+  right: 0;
+}
+
+// 隐藏
+.hidden {
+  display: none;
+}
+
+// 阴影
+.box-shadow {
+  box-shadow: 1px 1px 3px rgba(0, 0, 0, 0.2);
+}
+
+/* icon 样式的 button */
+.button-icon {
+  border-radius: 0;
+  padding: 0;
+  margin: 0;
+  background: none;
+}
+.button-icon:after {
+  border: none;
+}
+
+// 圆角
+.border-radius-5 {
+  border-radius: 5px;
+}
+
+.primary-button {
+  background-color: #f8c400;
+  border-radius: 5px;
+  font-size: 16px;
+  border: none;
+  padding: 3px 20px 3px 20px;
+}
+.primary-button:after {
+  border: none;
+}
+
+.mini-btn {
+  background-color: #f8c400;
+  border-radius: 20px;
+  font-size: 12px;
+  border: none;
+}
+.mini-btn:after {
+  border: none;
+}
+
+// 搜索样式定义
+.search-bar  .van-search__field .van-cell{
+  background-color: #f0f0f0;
+}
+
+// 块级样式定义
+.block{
+  display: block;
+}
+
+// 反馈当选样式定义
+.radio-box{
+  .van-radio__label{
+    font-size: 12px;
+    color: #666666;
+  }
+}
+
+// 全局相对定位
+.pos-rel{
+  position: relative;
+}
+.clear_both{
+  clear: both;
+  width: 100%;
+  display: block;
+  font-size: 0;
+}
+
+// end线
+.end-line{
+  font-size: 12px;
+  position: relative;
+  clear: both;
+  margin: 25px 0 15px 0;
+  &:before{
+    content: '';
+    display: block;
+    border-top: #c5c5c5 1px solid;
+  }
+  .end-bar{    
+    position: absolute;
+    left: 0;
+    top: -10px;
+    width: 100%;
+    display: block;
+    text-align: center;
+    .end-txt{
+      display: inline-block;
+      background: #fff;
+      color: #999999;
+      padding: 0 5px;
+    }
+    .iconfont{
+      display: inline-block;
+      vertical-align: middle;
+      transform: rotate(90deg)
+    }
+  }
+}
+
+// 1行文字展示
+.line-1{
+  height: 20px;
+  line-height: 1.3;
+  overflow:hidden;
+  text-overflow:ellipsis;
+  display:-webkit-box;
+  -webkit-line-clamp:1;
+  -webkit-box-orient:vertical;
+  word-break:break-word;
+}
+
+// 2行文字展示
+.line-2{
+  height: 34px;
+  line-height: 1.4;
+  overflow:hidden;
+  text-overflow:ellipsis;
+  display:-webkit-box;
+  -webkit-line-clamp:2;
+  -webkit-box-orient:vertical;
+  word-break:break-word;
+}
+
+.popup {
+  position: fixed;
+  width: 100%;
+  height: 100%;
+  left: 0;
+  top: 0;
+  z-index: 9999;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: rgba(0, 0, 0, 0.7) none repeat scroll 0 0;
+}
+
+// 3行文字展示
+.line-3{
+  height: 65px;
+  line-height: 1.4;
+  overflow:hidden;
+  text-overflow:ellipsis;
+  display:-webkit-box;
+  -webkit-line-clamp:3;
+  -webkit-box-orient:vertical;
+  word-break:break-word;
+}
+
+// 全局超出隐藏
+.over-h {
+  overflow: hidden;
+}
+
+.get-sku-buy{
+  .van-stepper__input-wrapper{
+    width: 130px;
+    height: 33px;
+    margin: 0 4px;
+    border-left: #eeeeee 1px solid;
+    border-right: #eeeeee 1px solid;
+  }
+  .van-stepper__minus,.van-stepper__plus{
+    height: 33px;
+  }
+}
+
+// tabs重新定义
+.tabs-bar{
+  &.line-size{
+    .van-tabs--line .van-tabs__wrap {
+      padding: 0 0 0 0px;
+    }
+    .van-tab{
+      &.van-tab--active .van-tab__title{
+        font-size: 16px!important;
+      }
+      .van-tab__title{
+        font-size: 16px!important;
+      }
+    }
+  }
+  &.list-tabs{
+    .van-tabs{
+      border-bottom: none;
+    }
+    .van-tabs--line .van-tabs__wrap {
+      padding: 0 0 0 5px;
+    }
+  }
+  .van-tabs{
+    padding: 2px 0px;
+    height: 43px;
+    box-sizing: border-box;
+    border-bottom: #d5d5d5 1px solid;
+    background: #fff;
+    overflow: hidden;
+  }
+  .van-tabs--line {
+    padding-top: 40px;    
+  }
+  .van-tabs--line .van-tabs__wrap {
+    height: 40px;
+    padding: 0 0 0 10px;
+  }
+  .van-tabs__wrap {
+    top: 0px;
+  }
+  .van-tab{
+    -webkit-flex: 0 0 23%!important;
+    flex: 0 0 23%!important;
+    height: 42px!important;
+    line-height: 41px!important;
+    color: #333;
+    padding: 0;
+    .van-tab__title{
+      font-size: 14px!important;
+      color: #818181;
+      line-height: 45px!important;
+    }
+    &.van-tab--active{
+      &:after{
+        content: '';
+        width: 50%;
+        position: absolute;
+        left: 25%;
+        bottom: 0;
+        height: 3px;
+        margin-left: 2px;
+        z-index: 50;
+        display: inline-block;
+        border-radius: 8px!important;
+        background-color: #ffcc00!important;
+      }
+      .van-tab__title{
+        font-weight: bold!important;
+        font-size: 18px!important;
+        line-height: 41px!important;
+        color: #292929;
+      }
+    }
+  }
+  .van-tabs__line{
+    border-radius: 8px!important;
+    background-color: #ffcc00!important;
+    // left: 10%!important;
+    display: none;
+  }  
+}
+
+// 店铺顶部广告图定义
+.upload-topbg-bar{
+  .weui-uploader__input-box{
+    width: 80px;
+    height: 80px;
+    border: #999999 1px dashed;
+    box-sizing: border-box;
+  }
+  .weui-uploader__input-box:before, .weui-uploader__input-box:after{
+    background-color: #999999;
+  }
+}
+
+.default-checkbox{
+  .van-checkbox__icon{
+    border: 1px solid #999999;
+  }
+}
+
+.career-checkbox{
+  .van-checkbox__icon{
+    border: 1px solid #dddddd;
+    background: #fff;
+  }
+}
+// 购物车页面样式调整
+.cart{
+  .van-checkbox__icon{
+    border: 1px solid #cacaca;
+  }
+  .van-stepper__minus--disabled.van-stepper__minus--hover, .van-stepper__minus--disabled.van-stepper__plus--hover,
+   .van-stepper__plus--disabled.van-stepper__minus--hover,.van-stepper__plus--disabled.van-stepper__plus--hover {
+    background-color: #fff;
+    color: #999;
+  } 
+  .van-stepper{
+    width: 81 px;
+    height: 20px;
+    border: 1px solid #acacac;
+    border-radius: 3px;
+    overflow: hidden;
+  }   
+  .van-stepper__minus,.van-stepper__plus{
+    width: 23px;
+    height: 20px;
+    border: none;
+    color: #333;
+    background: #fff;
+  }
+  .van-stepper__input-wrapper{
+    width: 35px;
+    height: 20px;
+    font-size: 14px;
+    background: #fff;
+    color: #333;
+    border: none;
+    border-left: 1px solid #acacac;
+    border-right: 1px solid #acacac;
+  }
+  .cart-tab{
+    .van-tab{
+      color: #666666 !important;
+    }
+    .van-tab--active{
+      color: #333333 !important;
+    }
+    .van-tabs__scroll--card{
+      border-radius: 50px!important;
+      overflow: hidden;
+    }
+  }
+}
+
+.show-dialog{
+  .dialog-index--van-dialog{
+    width: 300px;
+  }
+  .van-dialog{
+      width: 300px;
+  }
+  .van-popup{
+      top: 170px;
+  }
+  .van-dialog__header{
+      font-size: 18px;
+      color: #333333;
+      font-weight: bold;
+      line-height: 1;
+      padding-top: 28px;
+  }
+  .dialog-index--van-dialog__cancel{
+    border-right: .5px solid #c5c5c5 !important;
+  }
+  .dialog-index--van-dialog__confirm{
+      background: #f8c400 !important;
+      color: #333333 !important;
+  }
+  .van-dialog__confirm{
+      color: #333333 !important;
+  }
+  .van-hairline--top::after{
+      border-color: #c5c5c5;
+  }
+  .van-hairline--right::after{
+      border-color: #c5c5c5;
+  }
+  input{
+      padding: 0 12px;
+      // padding: 18px 12px!important;
+      border: .5px solid #c5c5c5;
+      width: 80%;
+      margin: 23px auto 27px !important;
+      line-height: 50px!important;
+      height: 50px!important;
+      min-height: unset!important;
+      border-radius: 3px;
+      font-size: 15px!important;
+      color: #999999;
+  }
+}
+.dialog-h{
+  .dialog-index--van-dialog{
+    height: 235px;
+    width: 350px!important;
+  }
+  .van-hairline--top::after{
+    border: unset;
+  }
+  .van-popup{
+    top: 241px !important;
+  }
+}
+.primary-button.save-default[disabled]{
+  background-color: #f8c400;
+  color: #000;
+}
+
+.perfect-shop{
+//  暂无数据按钮
+  button{
+    background: #ffe200;
+    line-height: 1;
+    padding-top: 8px;
+    padding-bottom: 8px;
+    width: 129px;
+    height: 35px;
+    font-size: 19px;
+    &::after{
+      border: unset;
+    }
+  }
+}
+.timer .van-count-down{
+  color: #ff0000;
+  font-size: 12px;
+}
+.tabs-box{
+  .van-info{
+    position: absolute!important;
+    right: 5px!important;
+    top: 7px!important;
+    background-color: #ff1d1d!important;
+  }
+  .van-tabs__line{
+    background-color: #ffe200;
+  }
+}
+.base-line-shop{
+  .container{
+    width: 100%;
+  }
+  .base-line{
+    width: 30%!important;
+  }
+}
+
+.auth-page{
+  input[disabled]{
+    opacity: 0.5;
+  }
+}
+
+.agreement-page{
+  .check-t{
+    .van-checkbox__label{
+      color: #646464;
+      font-weight: bold;
+      font-size: 16px;
+    }
+    .van-checkbox__icon{
+      border: 1px solid #7d7d7d;
+    }
+  }
+}
+
+// 注册栏展示开始
+.register-space{
+  height: 46px;
+}
+.register-bar{
+  background: rgba(0, 0, 0, 0.5);
+  position: fixed;
+  left: 0;
+  bottom: 0;
+  z-index: 10;
+  padding: 0 16px;
+  box-sizing: border-box;
+  width: 100%;
+  height: 46px;
+  font-size: 12px;
+  color: #fff;
+  .reg-btn{
+    background: #7427ff;
+    border-radius: 50px;
+    height: 28px;
+    padding: 0 15px;
+  }
+}
+// 注册栏展示结束
+
+// 弹层样式开始
+.islayer-container{
+  text-align: center;
+  .islayer-bg{
+    position: fixed;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    z-index: 20;
+  }
+  .islayer-box{
+    background: #fff;
+    border-radius: 8px;
+    width: 274px;
+    margin: 0 auto;
+    overflow: hidden;
+    position: relative;
+    z-index: 21;
+    h2{
+      background: #efefef;
+    }
+    .islayer-content{
+      padding: 15px 15px;
+      text-align: left;
+      p{
+        padding-left: 15px;
+        font-size: 13px;
+        line-height: 1.5;
+        &.title-s{
+          padding-left: 0px;
+          font-weight: bold;
+        }
+      }
+    }
+    .bottom-bar{
+      background: #764cff;
+      position: relative;
+      z-index: 10;
+      img{
+        display: block;
+        position: absolute;
+        left: 0;
+        top: -21px;
+      }
+    }
+    .sure-btn{
+      background: #fedc16;
+      height: 45px;
+      width: 170px;
+      margin: 0 auto;
+      border-radius: 100px;
+    }
+  }
+}
+// 弹层样式结束

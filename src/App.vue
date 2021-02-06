@@ -32,4 +32,5 @@ export default {
 
 <style lang="less">
   @import "style/common.less";
+  @import "style/dynamic.less";
 </style>

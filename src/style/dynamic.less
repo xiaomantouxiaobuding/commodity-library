@@ -1,0 +1,77 @@
+/*单位px*/
+@0px: 0px;
+
+/*字体大小*/
+.font-size(30);
+.font-size(@n, @i: 9) when (@i =< @n) {
+  .font-@{i} {
+    font-size: @i + @0px;
+  }
+  .font-size(@n, (@i + 1));
+}
+
+/*
+外间隔
+0 最后生成，方便覆盖使用
+*/
+.margin(-30);
+.margin(@n, @i: 30) when (@i >= @n) {
+  .mar-@{i} {
+    margin: @i + @0px;
+  }
+  .mar-t-@{i} {
+    margin-top: @i + @0px;
+  }
+  .mar-l-@{i} {
+    margin-left: @i + @0px;
+  }
+  .mar-r-@{i} {
+    margin-right: @i + @0px;
+  }
+  .mar-b-@{i} {
+    margin-bottom: @i + @0px;
+  }
+  .margin(@n, (@i - 1));
+}
+
+/*
+内填充
+*/
+.padding(0);
+.padding(@n, @i: 30) when (@i >= @n) {
+  .pad-@{i} {
+    padding: @i + @0px;
+  }
+  .pad-t-@{i} {
+    padding-top: @i + @0px;
+  }
+  .pad-l-@{i} {
+    padding-left: @i + @0px;
+  }
+  .pad-r-@{i} {
+    padding-right: @i + @0px;
+  }
+  .pad-b-@{i} {
+    padding-bottom: @i + @0px;
+  }
+  .padding(@n, (@i - 1));
+}
+
+/*图片宽度*/
+.width(375);
+.width(@n, @i: 0) when (@i =< @n) {
+  .width-@{i} {
+    width: @i + @0px;
+  }
+  .width(@n, (@i + 1));
+}
+
+
+/*图片高度*/
+.height(375);
+.height(@n, @i: 0) when (@i =< @n) {
+  .height-@{i} {
+    height: @i + @0px;
+  }
+  .height(@n, (@i + 1));
+}
