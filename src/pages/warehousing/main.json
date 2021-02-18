@@ -1,0 +1,8 @@
+{
+  "navigationBarTitleText": "商品入库",
+  "navigationBarTextStyle": "white",
+  "navigationBarBackgroundColor": "#7427ff",
+  "usingComponents": {
+    "van-icon": "/static/components/vant-weapp/icon/index"
+  }
+}

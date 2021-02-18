@@ -1,7 +1,8 @@
 {
   "pages": [
     "pages/home/main",
-    "pages/personal/main"
+    "pages/personal/main",
+    "pages/warehousing/main"
   ],
   "window": {
     "backgroundTextStyle": "light",
