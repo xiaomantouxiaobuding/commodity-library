@@ -1,0 +1,10 @@
+{
+  "navigationBarTitleText": "出库",
+  "navigationBarTextStyle": "white",
+  "navigationBarBackgroundColor": "#7427ff",
+  "usingComponents": {
+    "van-cell-group": "/static/components/vant-weapp/cell-group/index",
+    "van-field": "/static/components/vant-weapp/field/index",
+    "van-button": "/static/components/vant-weapp/button/index"
+  }
+}

@@ -2,7 +2,8 @@
   "pages": [
     "pages/home/main",
     "pages/personal/main",
-    "pages/warehousing/main"
+    "pages/warehousing/main",
+    "pages/outStock/main"
   ],
   "window": {
     "backgroundTextStyle": "light",
